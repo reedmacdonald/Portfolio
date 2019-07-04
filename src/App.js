@@ -7,6 +7,7 @@ import Fork from './Components/Fork'
 import Knife from './Components/Knife'
 import Syrup from './Components/Syrup'
 import Coffee from './Components/Coffee'
+import Butter from './Components/Butter'
 
 class App extends Component {
   state={
@@ -24,6 +25,7 @@ class App extends Component {
       <Fork/>
       <Knife/>
       <Syrup/>
+      <Butter/>
       <h2 className='headerTwo'>...who enjoys a <u>Full-Stack</u> of Pancakes!</h2>
       <h2 className='headerThree'><a target='_blank' href='https://github.com/reedmacdonald'><u>GitHub</u></a> <a target='_blank' href='https://linkedin.com/in/reed-macdonald'><u>LinkedIn</u></a></h2>
     </div>
