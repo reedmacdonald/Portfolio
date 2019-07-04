@@ -1,33 +1,166 @@
-.App {
+#greatBackground{
+  background-image: url('https://previews.123rf.com/images/jirkaejc/jirkaejc1005/jirkaejc100500460/7070395-checkered-tablecloth.jpg')
+}
+
+.pancake{
+  display: block;
+  background-color:rgb(245, 245, 171);
+  height:300px;
+  width:400px;
+  margin-top:-6%;
+  margin-bottom: -390px;
+  border-radius:100%;
+  border:10px solid white;
   text-align: center;
+  transition-duration: 2s;
+  z-index: 11
+}
+.pancake:hover{
+  transform:translateY(15px)
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.projectImages{
+  width:300px;
+  height:200px
+}
+#pancakeOne{
+  position: absolute;
+  margin-top:-60px
+  
+}
+#pancakeTwo{
+  position: absolute;
+  margin-top: -90px
+}
+#pancakeThree{
+  position: absolute;
+  margin-top:-120px
+}
+#pancakeFour{
+  position: absolute;
+  margin-top:-150px
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+h1{
+  margin-left: 35%
+}
+h2{
+  margin-left: 38%
 }
 
-.App-link {
-  color: #61dafb;
+#experience{
+  position:absolute;
+  z-index: 9;
+  left:-300px;
+  top:500px
+}
+#skills{
+  position:absolute;
+  background-color: white;
+  left:63.5%;
+  width:90px;
+  height:70px;
+  align-content: center;
+  top:50%;
+  z-index: 26;
+  transition-duration: 2s
+
+}
+.bacon{
+  position:absolute;
+  background-color: rgb(245, 126, 122);
+  height: 345px;
+  width:50px;
+  margin-top: -10px;
+  transition-duration: 1.5s;
+  z-index: 12
+  
+}
+.baconWords{
+  transform:rotate(270deg);
+  margin-top: 350%;
+  font-size:30px
+}
+#fork{
+  position: absolute;
+  height:400px;
+  width:400px;
+  margin-top:-130px
+}
+#knife{
+  position: absolute;
+  height:400px;
+  width:400px;
+  margin-top:-130px;
+  margin-left:-90px
+}
+#syrup{
+  position: absolute;
+  z-index: 25;
+  top:270px;
+  left:1050px;
+  transition-duration: 2s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#coffeeCup{
+  position: absolute;
+  margin-top:-700px;
+  margin-left:1100px;
+  transition-duration: 2s;
+  z-index:10
 }
+
+#coffeeWords{
+  position: absolute;
+  width:300px;
+  left:480px;
+  top:400px;
+  z-index: 50000000000000;
+  transition-delay: 2s
+}
+
+#baconOne{
+  position:absolute;
+  margin-left:490px;
+  margin-top:-145px;
+  background-image: url('https://ak0.picdn.net/shutterstock/videos/3697250/thumb/2.jpg');
+  
+}
+#baconTwo{
+  position:absolute;
+  margin-left:420px;
+  margin-top:-145px;
+  background-image: url('https://ak0.picdn.net/shutterstock/videos/3697250/thumb/2.jpg');
+}
+#baconThree{
+  position:absolute;
+  margin-left:350px;
+  margin-top:-145px;
+  background-image: url('https://ak0.picdn.net/shutterstock/videos/3697250/thumb/2.jpg');
+  z-index:2
+}
+
+.plate{
+  margin-left: 300px;
+  height:550px;
+  width:750px;
+  background-color: rgb(219, 218, 218);
+  border-radius:13%;
+  border:2px solid black;
+  box-shadow: 10px 10px gray
+}
+.pancakeStack{
+  margin-top: -370px;
+  margin-left:570px
+}
+.headerTwo{
+  position: absolute;
+  top:700px
+}
+.headerThree{
+  position: absolute;
+  top:750px;
+  margin-left: 42.5%
+}
+
