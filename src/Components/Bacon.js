@@ -9,20 +9,27 @@ class Bacon extends Component{
         baconOneTransform:undefined,
         baconOneIndex:undefined,
         baconOneFilter:undefined,
+        baconOneAnimation:undefined,
         baconTwoHeight:undefined,
         baconTwoWidth:undefined,
         baconTwoTransform:undefined,
         baconTwoIndex:undefined,
+        baconTwoAnimation:undefined,
         baconThreeHeight:undefined,
         baconThreeWidth:undefined,
         baconThreeTransform:undefined,
         baconThreeIndex:undefined,
+        baconThreeAnimation:undefined,
         baconOneBlend:undefined,
         baconTwoBlend:undefined,
         baconThreeBlend:undefined,
         experienceOne:'none',
         experienceTwo:'none',
-        experienceThree:'none'
+        experienceThree:'none',
+        experienceFour:'none',
+        experienceFive:'none',
+        experienceSix:'none',
+        experienceSeven:'none'
     }
     moveBaconOne=()=>{
         this.setState({
@@ -31,7 +38,8 @@ class Bacon extends Component{
             baconOneTransform:'rotate(0deg)',
             baconOneIndex:'101',
             baconOneFilter:'brightness(500%)',
-            experienceOne:'block'
+            experienceOne:'block',
+            transform:'none'
         })
     }
     moveBaconTwo=()=>{
@@ -52,6 +60,46 @@ class Bacon extends Component{
             baconThreeIndex:'101',
             baconThreeFilter:'brightness(500%)',
             experienceThree:'block'
+        })
+    }
+    moveBaconFour=()=>{
+        this.setState({
+            baconFourHeight:'40vh',
+            baconFourWidth:'50vw',
+            baconFourTransform:'rotate(0deg)',
+            baconFourIndex:'101',
+            baconFourFilter:'brightness(500%)',
+            experienceFour:'block'
+        })
+    }
+    moveBaconFive=()=>{
+        this.setState({
+            baconFiveHeight:'40vh',
+            baconFiveWidth:'50vw',
+            baconFiveTransform:'rotate(0deg)',
+            baconFiveIndex:'101',
+            baconFiveFilter:'brightness(500%)',
+            experienceFive:'block'
+        })
+    }
+    moveBaconSix=()=>{
+        this.setState({
+            baconSixHeight:'40vh',
+            baconSixWidth:'50vw',
+            baconSixTransform:'rotate(0deg)',
+            baconSixIndex:'101',
+            baconSixFilter:'brightness(500%)',
+            experienceSix:'block'
+        })
+    }
+    moveBaconSeven=()=>{
+        this.setState({
+            baconSevenHeight:'40vh',
+            baconSevenWidth:'50vw',
+            baconSevenTransform:'rotate(0deg)',
+            baconSevenIndex:'101',
+            baconSevenFilter:'brightness(500%)',
+            experienceSeven:'block'
         })
     }
     resetBaconOne=()=>{
@@ -84,6 +132,46 @@ class Bacon extends Component{
             experienceThree:'none'
         })
     }
+    resetBaconFour=()=>{
+        this.setState({
+            baconFourHeight:undefined,
+            baconFourWidth:undefined,
+            baconFourTransform:undefined,
+            baconFourIndex:undefined,
+            baconFourFilter:undefined,
+            experienceFour:'none'
+        })
+    }
+    resetBaconFive=()=>{
+        this.setState({
+            baconFiveHeight:undefined,
+            baconFiveWidth:undefined,
+            baconFiveTransform:undefined,
+            baconFiveIndex:undefined,
+            baconFiveFilter:undefined,
+            experienceFive:'none'
+        })
+    }
+    resetBaconSix=()=>{
+        this.setState({
+            baconSixHeight:undefined,
+            baconSixWidth:undefined,
+            baconSixTransform:undefined,
+            baconSixIndex:undefined,
+            baconSixFilter:undefined,
+            experienceSix:'none'
+        })
+    }
+    resetBaconSeven=()=>{
+        this.setState({
+            baconSevenHeight:undefined,
+            baconSevenWidth:undefined,
+            baconSevenTransform:undefined,
+            baconSevenIndex:undefined,
+            baconSevenFilter:undefined,
+            experienceSeven:'none'
+        })
+    }
   render(){
     return(
   < >
@@ -91,10 +179,10 @@ class Bacon extends Component{
 
       {this.props.amountOfBacon>1?<img style={{transform:this.state.baconTwoTransform,height:this.state.baconTwoHeight,width:this.state.baconTwoWidth,zIndex:this.state.baconTwoIndex,filter:this.state.baconTwoFilter}} onClick={!this.state.baconTwoTransform?this.moveBaconTwo:this.resetBaconTwo} src='http://pngriver.com/wp-content/uploads/2017/11/Bacon-food-transparent-png-images-free-download-BaconFest_WebSlider_baconslice.png'className='bacon' id='baconTwo'/>:undefined}
       {this.props.amountOfBacon>2?<img style={{transform:this.state.baconThreeTransform,height:this.state.baconThreeHeight,width:this.state.baconThreeWidth,zIndex:this.state.baconThreeIndex,filter:this.state.baconThreeFilter}} onClick={!this.state.baconThreeTransform?this.moveBaconThree:this.resetBaconThree} src='http://pngriver.com/wp-content/uploads/2017/11/Bacon-food-transparent-png-images-free-download-BaconFest_WebSlider_baconslice.png'className='bacon' id='baconThree'/>:undefined}
-      {this.props.amountOfBacon>3?<img src='http://pngriver.com/wp-content/uploads/2017/11/Bacon-food-transparent-png-images-free-download-BaconFest_WebSlider_baconslice.png'className='bacon' id='baconFour'/>:undefined}
-      {this.props.amountOfBacon>4?<img src='http://pngriver.com/wp-content/uploads/2017/11/Bacon-food-transparent-png-images-free-download-BaconFest_WebSlider_baconslice.png'className='bacon' id='baconFive'/>:undefined}
-      {this.props.amountOfBacon>5?<img src='http://pngriver.com/wp-content/uploads/2017/11/Bacon-food-transparent-png-images-free-download-BaconFest_WebSlider_baconslice.png'className='bacon' id='baconSix'/>:undefined}
-      {this.props.amountOfBacon>6?<img src='http://pngriver.com/wp-content/uploads/2017/11/Bacon-food-transparent-png-images-free-download-BaconFest_WebSlider_baconslice.png'className='bacon' id='baconSeven'/>:undefined}
+      {this.props.amountOfBacon>3?<img style={{transform:this.state.baconFourTransform,height:this.state.baconFourHeight,width:this.state.baconFourWidth,zIndex:this.state.baconFourIndex,filter:this.state.baconFourFilter}} onClick={!this.state.baconFourTransform?this.moveBaconFour:this.resetBaconFour} src='http://pngriver.com/wp-content/uploads/2017/11/Bacon-food-transparent-png-images-free-download-BaconFest_WebSlider_baconslice.png'className='bacon' id='baconFour'/>:undefined}
+      {this.props.amountOfBacon>4?<img style={{transform:this.state.baconFiveTransform,height:this.state.baconFiveHeight,width:this.state.baconFiveWidth,zIndex:this.state.baconFiveIndex,filter:this.state.baconFiveFilter}} onClick={!this.state.baconFiveTransform?this.moveBaconFive:this.resetBaconFive} src='http://pngriver.com/wp-content/uploads/2017/11/Bacon-food-transparent-png-images-free-download-BaconFest_WebSlider_baconslice.png'className='bacon' id='baconFive'/>:undefined}
+      {this.props.amountOfBacon>5?<img style={{transform:this.state.baconSixTransform,height:this.state.baconSixHeight,width:this.state.baconSixWidth,zIndex:this.state.baconSixIndex,filter:this.state.baconSixFilter}} onClick={!this.state.baconSixTransform?this.moveBaconSix:this.resetBaconSix} src='http://pngriver.com/wp-content/uploads/2017/11/Bacon-food-transparent-png-images-free-download-BaconFest_WebSlider_baconslice.png'className='bacon' id='baconSix'/>:undefined}
+      {this.props.amountOfBacon>6?<img style={{transform:this.state.baconSevenTransform,height:this.state.baconSevenHeight,width:this.state.baconSevenWidth,zIndex:this.state.baconSevenIndex,filter:this.state.baconSevenFilter}} onClick={!this.state.baconSevenTransform?this.moveBaconSeven:this.resetBaconSeven}src='http://pngriver.com/wp-content/uploads/2017/11/Bacon-food-transparent-png-images-free-download-BaconFest_WebSlider_baconslice.png'className='bacon' id='baconSeven'/>:undefined}
         <div onClick={this.resetBaconOne}className='baconExperience' id='experienceOne' style={{display:this.state.experienceOne}}>
             Congress
             <br/>
@@ -123,6 +211,46 @@ class Bacon extends Component{
             <ul>
                 <li>Assisted in preparing Senator Feinstein’s visit to Los Angeles to speak on the topic of gun control.</li>
                 <li>Corresponded daily with the DC office to relay problems and updates of the political developments of Los Angeles.</li>
+            </ul>
+        </div>
+        <div onClick={this.resetBaconThree} className='baconExperience' id='experienceFour' style={{display:this.state.experienceFour}}>
+            Los Angeles World Affairs Council
+            <br/>
+            Development Intern
+            <br/>
+            <ul>
+                <li>Researched and formally invited over a dozen speakers to various networking events organized by the LAWAC.</li>
+                <li>Troubleshooted problems for members and helped manage payment and scheduling.</li>
+            </ul>
+        </div>
+        <div onClick={this.resetBaconFive} className='baconExperience' id='experienceFive' style={{display:this.state.experienceFive}}>
+            California State Senate
+            <br/>
+            Legislative Intern
+            <br/>
+            <ul>
+                <li>Researched and formally invited over a dozen speakers to various networking events organized by the LAWAC.</li>
+                <li>Troubleshooted problems for members and helped manage payment and scheduling.</li>
+            </ul>
+        </div>
+        <div onClick={this.resetBaconSix} className='baconExperience' id='experienceSix' style={{display:this.state.experienceSix}}>
+            UCLA Radio
+            <br/>
+            Radio Host
+            <br/>
+            <ul>
+                <li>Researched and formally invited over a dozen speakers to various networking events organized by the LAWAC.</li>
+                <li>Troubleshooted problems for members and helped manage payment and scheduling.</li>
+            </ul>
+        </div>
+        <div onClick={this.resetBaconSeven} className='baconExperience' id='experienceSeven' style={{display:this.state.experienceSeven}}>
+            Daily Bruin
+            <br/>
+            Writer
+            <br/>
+            <ul>
+                <li>Researched and formally invited over a dozen speakers to various networking events organized by the LAWAC.</li>
+                <li>Troubleshooted problems for members and helped manage payment and scheduling.</li>
             </ul>
         </div>
 

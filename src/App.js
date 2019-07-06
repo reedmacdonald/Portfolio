@@ -16,103 +16,107 @@ class App extends Component {
     blend:undefined,
     amountOfBacon:3,
     amountOfPancakes:4,
-    baconLeft:'3%',
-    baconTop:'50%'
+    baconLeft:'13vw',
+    baconTop:'50vh'
   }
   removeBacon=()=>{
+    if (this.state.amountOfBacon>0){
     if (this.state.amountOfBacon==1){
     this.setState({
       amountOfBacon:this.state.amountOfBacon-1,
-      baconLeft:'10%',
-      baconTop:'10%'
+      baconLeft:'13vw',
+      baconTop:'50vh'
     })}
     if (this.state.amountOfBacon==2){
       this.setState({
         amountOfBacon:this.state.amountOfBacon-1,
-        baconLeft:'10%',
-        baconTop:'50%'
+        baconLeft:'13vw',
+        baconTop:'50vh'
       })}
       if (this.state.amountOfBacon==3){
         this.setState({
           amountOfBacon:this.state.amountOfBacon-1,
-          baconLeft:'7%',
-          baconTop:'50%'
+          baconLeft:'13vw',
+          baconTop:'50vh'
         })}
         if (this.state.amountOfBacon==4){
           this.setState({
             amountOfBacon:this.state.amountOfBacon-1,
-            baconLeft:'10%',
-            baconTop:'50%'
+            baconLeft:'13vw',
+            baconTop:'50vh'
           })}
           if (this.state.amountOfBacon==5){
             this.setState({
               amountOfBacon:this.state.amountOfBacon-1,
-              baconLeft:'10%',
-              baconTop:'50%'
+              baconLeft:'13vw',
+              baconTop:'50vh'
             })}
             if (this.state.amountOfBacon==6){
               this.setState({
                 amountOfBacon:this.state.amountOfBacon-1,
-                baconLeft:'10%',
-                baconTop:'50%'
+                baconLeft:'13vw',
+                baconTop:'50vh'
               })}
               if (this.state.amountOfBacon==7){
                 this.setState({
                   amountOfBacon:this.state.amountOfBacon-1,
-                  baconLeft:'10%',
-                  baconTop:'50%'
-                })}
+                  baconLeft:'13vw',
+                  baconTop:'50vh'
+                })}}
     console.log('removing bacon')
   }
   removePancake=()=>{
+    if (this.state.amountOfPancakes>0){
     this.setState({
       amountOfPancakes:this.state.amountOfPancakes-1
-    })
+    })}
     console.log('removing Pancake')
   }
   addPancakes=()=>{
+    if (this.state.amountOfPancakes<4){
     this.setState({
       amountOfPancakes:this.state.amountOfPancakes+1
-    })
+    })}
   }
 
   addBacon=()=>{
+    if (this.state.amountOfBacon<7){
     if (this.state.amountOfBacon==1){
       this.setState({
         amountOfBacon:this.state.amountOfBacon+1,
-        baconLeft:'10%',
-        baconTop:'10%'
+        baconLeft:'13vw',
+        baconTop:'50vh'
       })}
       if (this.state.amountOfBacon==2){
         this.setState({
           amountOfBacon:this.state.amountOfBacon+1,
-          baconLeft:'10%',
-          baconTop:'50%'
+          baconLeft:'13vw',
+          baconTop:'50vh'
         })}
         if (this.state.amountOfBacon==3){
           this.setState({
             amountOfBacon:this.state.amountOfBacon+1,
-            baconLeft:'7%',
-            baconTop:'50%'
+            baconLeft:'13vw',
+            baconTop:'50vh'
           })}
           if (this.state.amountOfBacon==4){
             this.setState({
               amountOfBacon:this.state.amountOfBacon+1,
-              baconLeft:'10%',
-              baconTop:'50%'
+              baconLeft:'13vw',
+              baconTop:'50vh'
             })}
             if (this.state.amountOfBacon==5){
               this.setState({
                 amountOfBacon:this.state.amountOfBacon+1,
-                baconLeft:'10%',
-                baconTop:'50%'
+                baconLeft:'13vw',
+                baconTop:'50vh'
               })}
               if (this.state.amountOfBacon==6){
                 this.setState({
                   amountOfBacon:this.state.amountOfBacon+1,
-                  baconLeft:'1%',
-                  baconTop:'50%'
-                })}
+                  baconLeft:'13vw',
+                  baconTop:'50vh'
+                })}}
     console.log('adding bacon')
   }
   blendColor=()=>{

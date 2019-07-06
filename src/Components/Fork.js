@@ -12,9 +12,11 @@ class Fork extends Component{
     }
     moveFork=()=>{
         this.setState({
-            height:'900px',
-            width:'900px',
+            height:'90vh',
+            width:'30vw',
             transform:'rotate(90deg)',
+            top:'41vh',
+            width:'50vw'
 
         })
         console.log('Moving fork!')
@@ -43,6 +45,21 @@ class Fork extends Component{
         console.log(this.props.baconLeft,'     this.props.baconLeft')
         console.log(this.props.baconTop,'     this.props.baconTop')
     }
+    forkOnPancake=()=>{
+        this.setState({
+            height:undefined,
+            width:undefined,
+            transform:'rotate(45deg)',
+            top:'47vh',
+            left:'32vw'
+        })
+        setTimeout(this.props.removePancake, 2000);
+        setTimeout(this.resetFork, 2000);
+        //this.props.removeBacon()
+        console.log('forkingOn pancake')
+        console.log(this.props.baconLeft,'     this.props.baconLeft')
+        console.log(this.props.baconTop,'     this.props.baconTop')
+    }
     
   render(){
     return(
@@ -50,7 +67,7 @@ class Fork extends Component{
     <img 
     onClick={!this.state.width?this.moveFork:this.resetFork}
     style={{height:this.state.height,width:this.state.width,transform:this.state.transform,top:this.state.top,left:this.state.left}}id='fork' src='http://pngimg.com/uploads/fork/fork_PNG3066.png'/>
-    {this.state.width?<><h4 onClick={this.forkOnBacon} id='eatBacon'>Eat Bacon</h4><h4 onClick={this.props.removePancake} id='eatPancake'>Eat Pancake</h4></>:undefined}
+    {this.state.width?<><h4 onClick={this.forkOnBacon} id='eatBacon'>Eat Bacon</h4><h4 onClick={this.forkOnPancake} id='eatPancake'>Eat Pancake</h4></>:undefined}
   </>
     )
   }
