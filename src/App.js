@@ -129,7 +129,7 @@ class App extends Component {
       <PancakeStack amountOfPancakes={this.state.amountOfPancakes}/>
       <Bacon amountOfBacon={this.state.amountOfBacon}/>
       <Fork removePancake={this.removePancake} removeBacon={this.removeBacon} baconLeft={this.state.baconLeft} baconTop={this.state.baconTop} amountOfBacon={this.state.amountOfBacon} amountOfPancakes={this.state.amountOfPancakes}/>
-      
+      <img src='https://previews.123rf.com/images/solarus/solarus1509/solarus150900101/45890231-blue-table-cloth-background-seamless-pattern-vector-illustration-of-traditional-gingham-dining-cloth.jpg' id='tableCloth'/>
       <Syrup blendColor={this.blendColor}/>
       <PancakeTray addPancakes={this.addPancakes}/>
       <Butter/>

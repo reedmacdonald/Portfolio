@@ -1,7 +1,9 @@
 #greatBackground{
-  background-image: url('https://previews.123rf.com/images/jirkaejc/jirkaejc1005/jirkaejc100500460/7070395-checkered-tablecloth.jpg');
-  background-color:purple
+  
+  
+  background-color:white
 }
+
 #pancakeTray{
   position: absolute;
   top:-58%;
@@ -14,16 +16,17 @@
 
 .pancake{
   display: block;
+  position:absolute;
   background-color:rgb(247, 215, 139);
   height:300px;
   width:400px;
-  margin-top:-6%;
-  margin-bottom: -390px;
+  left:38%;
+  top:38%;
   border-radius:100%;
   border:10px solid white;
   text-align: center;
   transition-duration: 2s;
-  z-index: 11;
+  z-index: 90;
   
 }
 .pancake:hover{
@@ -61,19 +64,20 @@ h2{
 }
 
 #experience{
+  
   position:absolute;
   z-index: 9;
-  left:-300px;
-  top:500px
+  left:-7.5%;
+  top:55%
 }
 #skills{
   position:absolute;
   background-color: white;
-  left:63.5%;
+  left:1%;
   width:90px;
   height:70px;
   align-content: center;
-  top:45%;
+  top:67.5%;
   z-index: 26;
   transition-duration: 2s;
   border-radius: 13%;
@@ -108,6 +112,8 @@ h2{
 }
 #fork{
   position: absolute;
+  left:3%;
+  top:41%;
   height:400px;
   width:400px;
   margin-top:-130px;
@@ -117,7 +123,7 @@ h2{
 #eatBacon{
   position: absolute;
   width:10%;
-  top:60%;
+  top:70%;
   left:10%;
   z-index: 90;
   transition-duration: 2s
@@ -131,7 +137,7 @@ h2{
 #eatPancake{
   position: absolute;
   width:10%;
-  top:60%;
+  top:70%;
   left:20%;
   z-index:90;
   transition-duration: 2s
@@ -146,13 +152,13 @@ h2{
 #syrup{
   position: absolute;
   z-index: 25;
-  top:270px;
-  left:1050px;
+  top:50%;
+  left:-7%;
   transition-duration: 2s;
 }
 #butterStick{
   position:absolute;
-  top:30%;
+  top:45%;
   left:70%;
   width:500px;
   height:270px;
@@ -163,35 +169,35 @@ h2{
 }
 .butterSlice{
   position: absolute;
-  z-index: 49;
+  z-index: 10000000;
   width:250px;
   height:150px
 }
 #butterSliceOne{
-  left:30%;
-  top:25%
+  left:50%;
+  top:33%
 }
 #butterSliceTwo{
   left:40%;
-  top:23%
+  top:41%
 }
 #butterSliceThree{
-  left:40%;
-  top:29%
+  left:45%;
+  top:41%
 }
 #butterSliceFour{
   left:35%;
   top:33%
 }
 #butterSliceFive{
-  left:28%;
+  left:45%;
   top:29%
 }
 
 #coffeeCup{
   position: absolute;
-  margin-top:-700px;
-  margin-left:1100px;
+  top:10%;
+  left:65%;
   transition-duration: 2s;
   z-index: 13;
   
@@ -247,27 +253,27 @@ h2{
 
 #baconOne{
   position:absolute;
-  margin-left:490px;
-  margin-top:-145px;
+  left:33%;
+  top:22%;
   background-image: url('https://ak0.picdn.net/shutterstock/videos/3697250/thumb/2.jpg');
   
 }
 #baconTwo{
   position:absolute;
-  margin-left:420px;
-  margin-top:-145px;
+  left:30%;
+  top:22%;
   background-image: url('https://ak0.picdn.net/shutterstock/videos/3697250/thumb/2.jpg');
 }
 #baconThree{
   position:absolute;
-  margin-left:350px;
-  margin-top:-145px;
+  left:27%;
+  top:22%;
   background-image: url('https://ak0.picdn.net/shutterstock/videos/3697250/thumb/2.jpg');
   z-index:2
 }
 #baconFour{
   position:absolute;
-  left:20%;
+  left:28%;
   top:20%;
   transform:rotate(-30deg);
   background-image: url('https://ak0.picdn.net/shutterstock/videos/3697250/thumb/2.jpg');
@@ -275,15 +281,21 @@ h2{
 }
 #baconFive{
   position:absolute;
-  left:27%;
+  left:33%;
   top:25%;
   transform:rotate(-15deg);
   background-image: url('https://ak0.picdn.net/shutterstock/videos/3697250/thumb/2.jpg');
   z-index:2
 }
+#tableCloth{
+  position:absolute;
+  width:100%;
+  height:fill;
+  z-index:-2
+}
 #baconSix{
   position:absolute;
-  left:22%;
+  left:32%;
   top:20%;
   transform:rotate(15deg);
   background-image: url('https://ak0.picdn.net/shutterstock/videos/3697250/thumb/2.jpg');
@@ -291,7 +303,7 @@ h2{
 }
 #baconSeven{
   position:absolute;
-  left:19%;
+  left:30%;
   top:20%;
   transform:rotate(36deg);
   background-image: url('https://ak0.picdn.net/shutterstock/videos/3697250/thumb/2.jpg');
@@ -299,13 +311,16 @@ h2{
 }
 
 .plate{
-  margin-left: 300px;
+  position:absolute;
+  left: 45%;
   height:550px;
   width:750px;
   background-color: rgb(219, 218, 218);
   border-radius:13%;
+  transform: translateX(-55%);
   border:2px solid black;
-  box-shadow: 10px 10px gray
+  box-shadow: 10px 10px gray;
+  
 }
 .pancakeStack{
   margin-top: -370px;
