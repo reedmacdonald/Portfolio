@@ -6,8 +6,9 @@
 
 #pancakeTray{
   position: absolute;
-  top:-58%;
-  left:-25%;
+  width:50vw;
+  top:-50vh;
+  left:-25vw;
   transition-duration: 2s
 }
 #pancakeTray:hover{
@@ -75,11 +76,11 @@ h2{
 #skills{
   position:absolute;
   background-color: white;
-  left:3vw;
+  left:2.5vw;
   width:7vw;
   height:10vh;
   text-align: center;
-  top:60vh;
+  top:63vh;
   z-index: 26;
   transition-duration: 2s;
   border-radius: 13%;
@@ -105,6 +106,7 @@ h2{
   transition-duration: 2s;
   animation:fadein 2s;
   width:40vw;
+  max-height:32vh;
   font-weight: bold;
   pointer-events: none
 }
@@ -124,8 +126,9 @@ h2{
 }
 #plateOfBacon{
   position: absolute;
-  left:85%;
-  top:5%;
+  width:35vw;
+  left:85vw;
+  top:5vh;
   transition-duration: 2s
 }
 #plateOfBacon:hover{
@@ -142,6 +145,7 @@ h2{
   transition-duration: 2s
 }
 #eatBacon{
+  text-align:center;
   position: absolute;
   width:10%;
   top:70vh;
@@ -156,6 +160,7 @@ h2{
   background-color: rgb(156,243,243)
 }
 #eatPancake{
+  text-align:center;
   position: absolute;
   width:10%;
   top:70%;
@@ -174,7 +179,8 @@ h2{
   position: absolute;
   z-index: 25;
   height:40vh;
-  top:40vh;
+  width:19vw;
+  top:45vh;
   left:-7vh;
   transition-duration: 2s;
 }
@@ -235,7 +241,7 @@ h2{
 }
 @keyframes steamUp{
 
-  from {top:17vh;opacity:100%}
+  from {top:11vh;opacity:100%}
   
   to {top:0;opacity:0}
   
@@ -246,7 +252,9 @@ h2{
   position:absolute;
   animation: steamUp;
   left:27vw;
-  top:19vh;
+  top:11vh;
+  width:10vw;
+  height:45vh;
   
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -273,12 +281,12 @@ h2{
 
 #coffeeWords{
   position: absolute;
+  display: block;
   width:300px;
   left:23.5vw;
   top:41vh;
   z-index: 50000000000000;
-  animation:fadein 3s
-  
+  animation:fadein 3s;
 }
 @keyframes fadein {
   from { opacity: 0; }
@@ -362,7 +370,7 @@ h2{
 
 .plate{
   position:absolute;
-  left: 45%;
+  left: 45vw;
   height:53vh;
   width:43vw;
   background-color: rgb(219, 218, 218);

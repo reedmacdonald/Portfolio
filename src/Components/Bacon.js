@@ -37,7 +37,7 @@ class Bacon extends Component{
             baconOneWidth:'50vw',
             baconOneTransform:'rotate(0deg)',
             baconOneIndex:'101',
-            baconOneFilter:'brightness(500%)',
+            baconOneFilter:'brightness(700%)',
             experienceOne:'block',
             transform:'none'
         })
@@ -48,7 +48,7 @@ class Bacon extends Component{
             baconTwoWidth:'50vw',
             baconTwoTransform:'rotate(0deg)',
             baconTwoIndex:'101',
-            baconTwoFilter:'brightness(500%)',
+            baconTwoFilter:'brightness(700%)',
             experienceTwo:'block'
         })
     }
@@ -58,7 +58,7 @@ class Bacon extends Component{
             baconThreeWidth:'50vw',
             baconThreeTransform:'rotate(0deg)',
             baconThreeIndex:'101',
-            baconThreeFilter:'brightness(500%)',
+            baconThreeFilter:'brightness(700%)',
             experienceThree:'block'
         })
     }
@@ -68,7 +68,7 @@ class Bacon extends Component{
             baconFourWidth:'50vw',
             baconFourTransform:'rotate(0deg)',
             baconFourIndex:'101',
-            baconFourFilter:'brightness(500%)',
+            baconFourFilter:'brightness(700%)',
             experienceFour:'block'
         })
     }
@@ -78,7 +78,7 @@ class Bacon extends Component{
             baconFiveWidth:'50vw',
             baconFiveTransform:'rotate(0deg)',
             baconFiveIndex:'101',
-            baconFiveFilter:'brightness(500%)',
+            baconFiveFilter:'brightness(700%)',
             experienceFive:'block'
         })
     }
@@ -88,7 +88,7 @@ class Bacon extends Component{
             baconSixWidth:'50vw',
             baconSixTransform:'rotate(0deg)',
             baconSixIndex:'101',
-            baconSixFilter:'brightness(500%)',
+            baconSixFilter:'brightness(700%)',
             experienceSix:'block'
         })
     }
@@ -98,7 +98,7 @@ class Bacon extends Component{
             baconSevenWidth:'50vw',
             baconSevenTransform:'rotate(0deg)',
             baconSevenIndex:'101',
-            baconSevenFilter:'brightness(500%)',
+            baconSevenFilter:'brightness(700%)',
             experienceSeven:'block'
         })
     }
