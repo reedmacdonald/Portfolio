@@ -18,15 +18,15 @@
   display: block;
   position:absolute;
   background-color:rgb(247, 215, 139);
-  height:300px;
-  width:400px;
+  height:30vh;
+  width:23vw;
   left:38%;
   top:38%;
   border-radius:100%;
   border:10px solid white;
   text-align: center;
   transition-duration: 2s;
-  z-index: 90;
+  z-index: 49;
   
 }
 .pancake:hover{
@@ -69,16 +69,16 @@ h2{
   position:absolute;
   z-index: 9;
   left:-7.5%;
-  top:55%
+  top:57vh
 }
 #skills{
   position:absolute;
   background-color: white;
-  left:1%;
-  width:90px;
-  height:70px;
-  align-content: center;
-  top:67.5%;
+  left:3vw;
+  width:7vw;
+  height:10vh;
+  text-align: center;
+  top:60vh;
   z-index: 26;
   transition-duration: 2s;
   border-radius: 13%;
@@ -89,14 +89,32 @@ h2{
 }
 .bacon{
   position:absolute;
-  background-color: rgb(245, 126, 122);
-  height: 345px;
-  width:50px;
-  margin-top: -10px;
+  transform: rotate(90deg);
+  height: 13vh;
+  width:27vw;
+  top: 50vh;
   transition-duration: 1.5s;
   z-index: 12
-  
 }
+.baconExperience{
+  z-index: 103;
+  position:absolute;
+  left:26vw;
+  top:48vh;
+  transition-duration: 2s;
+  width:40vw;
+  font-weight: bold;
+  pointer-events: none
+}
+#experienceTwo{
+  top:47vh;
+  left:23vw
+}
+#experienceThree{
+  top:47vh;
+  left:20vw
+}
+
 .baconWords{
   transform:rotate(270deg);
   margin-top: 350%;
@@ -115,8 +133,8 @@ h2{
   position: absolute;
   left:0;
   top:41%;
-  height:400px;
-  width:400px;
+  height:30vh;
+  width:23vw;
   margin-top:-130px;
   z-index: 80;
   transition-duration: 2s
@@ -124,8 +142,8 @@ h2{
 #eatBacon{
   position: absolute;
   width:10%;
-  top:70%;
-  left:10%;
+  top:70vh;
+  left:10vw;
   z-index: 90;
   transition-duration: 2s
 }
@@ -153,16 +171,16 @@ h2{
 #syrup{
   position: absolute;
   z-index: 25;
-  top:50%;
-  left:-7%;
+  top:40vh;
+  left:-7vh;
   transition-duration: 2s;
 }
 #butterStick{
   position:absolute;
   top:45%;
-  left:70%;
-  width:500px;
-  height:270px;
+  left:62.5vw;
+  width:28vw;
+  height:30vh;
   transition-duration: 2s
 }
 #butterStick:hover{
@@ -170,9 +188,10 @@ h2{
 }
 .butterSlice{
   position: absolute;
-  z-index: 10000000;
-  width:250px;
-  height:150px
+  z-index: 99;
+  width:12vw;
+  height:12vh;
+  pointer-events: none
 }
 #butterSliceOne{
   left:50%;
@@ -196,9 +215,10 @@ h2{
 }
 
 #coffeeCup{
+  width:17vw;
   position: absolute;
-  top:10%;
-  left:65%;
+  top:10vh;
+  left:65vw;
   transition-duration: 2s;
   z-index: 13;
   
@@ -208,38 +228,38 @@ h2{
 }
 @keyframes steamUp{
 
-  from {top:23%;opacity:100%}
+  from {top:19vh;opacity:100%}
   
   to {top:0;opacity:0}
   
 
 }
 .steam{
-  z-index: 60;
+  z-index: 100;
   position:absolute;
   animation-name: steamUp;
-  left:27%;
-  top:23%;
+  left:27vw;
+  top:19vh;
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
 #steamTwo{
-  left:24%;
+  left:24vw;
   animation-delay: 1.7s;
   animation-duration: 3s;
 }
 #steamThree{
-  left:20%;
+  left:20vw;
   animation-delay: 2s;
   animation-duration: 7s;
 }
 #steamFour{
-  left:18%;
+  left:18vw;
   animation-delay: 2.5s;
   animation-duration:4s
 }
 #steamFive{
-  left:21%;
+  left:21vw;
   animation-delay: 1s
 }
 
@@ -254,68 +274,84 @@ h2{
 
 #baconOne{
   position:absolute;
-  left:33%;
-  top:22%;
-  background-image: url('https://ak0.picdn.net/shutterstock/videos/3697250/thumb/2.jpg');
-  
+  left:22vw;
+  top:31vh;
+}
+#baconOne:hover{
+  top:29vh
 }
 #baconTwo{
   position:absolute;
-  left:30%;
-  top:22%;
-  background-image: url('https://ak0.picdn.net/shutterstock/videos/3697250/thumb/2.jpg');
+  left:19vw;
+  top:31vh;
+}
+#baconTwo:hover{
+  top:29vh
 }
 #baconThree{
   position:absolute;
-  left:27%;
-  top:22%;
-  background-image: url('https://ak0.picdn.net/shutterstock/videos/3697250/thumb/2.jpg');
+  left:15vw;
+  top:31vh; 
   z-index:2
+}
+#baconThree:hover{
+  top:29vh
 }
 #baconFour{
   position:absolute;
-  left:28%;
-  top:20%;
-  transform:rotate(-30deg);
-  background-image: url('https://ak0.picdn.net/shutterstock/videos/3697250/thumb/2.jpg');
-  z-index:62
+  left:16vw;
+  top:31vh;
+  transform:rotate(-49deg);
 }
+#baconFour:hover{
+  top:29vh
+}
+
 #baconFive{
   position:absolute;
-  left:33%;
-  top:25%;
-  transform:rotate(-15deg);
-  background-image: url('https://ak0.picdn.net/shutterstock/videos/3697250/thumb/2.jpg');
+  left:25.5vh;
+  top:31vh;
+  transform:rotate(-61deg);
   z-index:2
 }
+
+#baconFive:hover{
+  top:29vh
+
+}
+
 #tableCloth{
   position:absolute;
   width:100%;
-  height:fill;
+  height:100vh;
   z-index:-1
 }
 #baconSix{
   position:absolute;
-  left:32%;
-  top:20%;
-  transform:rotate(15deg);
-  background-image: url('https://ak0.picdn.net/shutterstock/videos/3697250/thumb/2.jpg');
-  z-index:60
+  left:19vw;
+  top:31vh;
+  transform:rotate(49deg);
+}
+#baconSix:hover{
+  top:29vh
 }
 #baconSeven{
   position:absolute;
-  left:30%;
-  top:20%;
-  transform:rotate(36deg);
-  background-image: url('https://ak0.picdn.net/shutterstock/videos/3697250/thumb/2.jpg');
+  left:15vw;
+  top:31vh;
+  transform:rotate(55deg);
+  
   z-index:2
+}
+#baconSeven:hover{
+  top:29vh
 }
 
 .plate{
   position:absolute;
   left: 45%;
-  height:550px;
-  width:750px;
+  height:53vh;
+  width:43vw;
   background-color: rgb(219, 218, 218);
   border-radius:13%;
   transform: translateX(-55%);
@@ -328,12 +364,20 @@ h2{
   margin-left:570px
 }
 .headerTwo{
+  margin-left: 0;
+  width:100vw;
+  background-color: aliceblue;
   position: absolute;
-  top:700px
+  top:70%;
+  text-align: center
 }
 .headerThree{
+  margin-left: 0;
+  width:100vw;
+  background-color: aliceblue;
   position: absolute;
-  top:750px;
-  margin-left: 42.5%
+  top:75%;
+  text-align: center
+  
 }
 

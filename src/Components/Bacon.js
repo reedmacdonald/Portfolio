@@ -7,38 +7,51 @@ class Bacon extends Component{
         baconOneHeight:undefined,
         baconOneWidth:undefined,
         baconOneTransform:undefined,
+        baconOneIndex:undefined,
+        baconOneFilter:undefined,
         baconTwoHeight:undefined,
         baconTwoWidth:undefined,
         baconTwoTransform:undefined,
+        baconTwoIndex:undefined,
         baconThreeHeight:undefined,
         baconThreeWidth:undefined,
         baconThreeTransform:undefined,
+        baconThreeIndex:undefined,
         baconOneBlend:undefined,
         baconTwoBlend:undefined,
-        baconThreeBlend:undefined
+        baconThreeBlend:undefined,
+        experienceOne:'none',
+        experienceTwo:'none',
+        experienceThree:'none'
     }
     moveBaconOne=()=>{
         this.setState({
-            baconOneHeight:'500px',
-            baconOneWidth:'70px',
-            baconOneTransform:'rotate(90deg)',
-            baconOneBlend:'luminosity'
+            baconOneHeight:'40vh',
+            baconOneWidth:'50vw',
+            baconOneTransform:'rotate(0deg)',
+            baconOneIndex:'101',
+            baconOneFilter:'brightness(500%)',
+            experienceOne:'block'
         })
     }
     moveBaconTwo=()=>{
         this.setState({
-            baconTwoHeight:'500px',
-            baconTwoWidth:'70px',
-            baconTwoTransform:'rotate(90deg)',
-            baconTwoBlend:'luminosity'
+            baconTwoHeight:'40vh',
+            baconTwoWidth:'50vw',
+            baconTwoTransform:'rotate(0deg)',
+            baconTwoIndex:'101',
+            baconTwoFilter:'brightness(500%)',
+            experienceTwo:'block'
         })
     }
     moveBaconThree=()=>{
         this.setState({
-            baconThreeHeight:'500px',
-            baconThreeWidth:'70px',
-            baconThreeTransform:'rotate(90deg)',
-            baconThreeBlend:'luminosity'
+            baconThreeHeight:'40vh',
+            baconThreeWidth:'50vw',
+            baconThreeTransform:'rotate(0deg)',
+            baconThreeIndex:'101',
+            baconThreeFilter:'brightness(500%)',
+            experienceThree:'block'
         })
     }
     resetBaconOne=()=>{
@@ -46,7 +59,9 @@ class Bacon extends Component{
             baconOneHeight:undefined,
             baconOneWidth:undefined,
             baconOneTransform:undefined,
-            baconOneBlend:undefined
+            baconOneIndex:undefined,
+            baconOneFilter:undefined,
+            experienceOne:'none'
         })
     }
     resetBaconTwo=()=>{
@@ -54,7 +69,9 @@ class Bacon extends Component{
             baconTwoHeight:undefined,
             baconTwoWidth:undefined,
             baconTwoTransform:undefined,
-            baconTwoBlend:undefined
+            baconTwoIndex:undefined,
+            baconTwoFilter:undefined,
+            experienceTwo:'none'
         })
     }
     resetBaconThree=()=>{
@@ -62,19 +79,53 @@ class Bacon extends Component{
             baconThreeHeight:undefined,
             baconThreeWidth:undefined,
             baconThreeTransform:undefined,
-            baconThreeBlend:undefined
+            baconThreeIndex:undefined,
+            baconThreeFilter:undefined,
+            experienceThree:'none'
         })
     }
   render(){
     return(
   < >
-      {this.props.amountOfBacon>0?<div onClick={!this.state.baconOneHeight?this.moveBaconOne:this.resetBaconOne}  style={{height:this.state.baconOneHeight,width:this.state.baconOneWidth,transform:this.state.baconOneTransform,backgroundBlendMode:this.state.baconOneBlend}} className="bacon" id="baconOne">{this.state.baconOneBlend?<h5 class='baconWords'>Feinstein</h5>:undefined}</div>:undefined}
-      {this.props.amountOfBacon>1?<div onClick={!this.state.baconTwoHeight?this.moveBaconTwo:this.resetBaconTwo}  style={{height:this.state.baconTwoHeight,width:this.state.baconTwoWidth,transform:this.state.baconTwoTransform,backgroundBlendMode:this.state.baconTwoBlend}}className="bacon" id="baconTwo">{this.state.baconTwoBlend?<h5 class='baconWords'>Congress</h5>:undefined}</div>:undefined}
-      {this.props.amountOfBacon>2?<div onClick={!this.state.baconThreeHeight?this.moveBaconThree:this.resetBaconThree}  style={{height:this.state.baconThreeHeight,width:this.state.baconThreeWidth,transform:this.state.baconThreeTransform,backgroundBlendMode:this.state.baconThreeBlend}}className="bacon" id="baconThree">{this.state.baconThreeBlend?<h5 class='baconWords'>Variety Business Intelligence</h5>:undefined}</div>:undefined}
-      {this.props.amountOfBacon>3?<div onClick={!this.state.baconThreeHeight?this.moveBaconThree:this.resetBaconThree}  style={{height:this.state.baconThreeHeight,width:this.state.baconThreeWidth,transform:this.state.baconThreeTransform,backgroundBlendMode:this.state.baconThreeBlend}} className="bacon" id="baconFour">{this.state.baconThreeBlend?<h5 class='baconWords'>State Senate</h5>:undefined}</div>:undefined}
-      {this.props.amountOfBacon>4?<div onClick={!this.state.baconThreeHeight?this.moveBaconThree:this.resetBaconThree}  style={{height:this.state.baconThreeHeight,width:this.state.baconThreeWidth,transform:this.state.baconThreeTransform,backgroundBlendMode:this.state.baconThreeBlend}} className="bacon" id="baconFive">{this.state.baconThreeBlend?<h5 class='baconWords'>Los Angeles World Affairs Council</h5>:undefined}</div>:undefined}
-      {this.props.amountOfBacon>5?<div onClick={!this.state.baconThreeHeight?this.moveBaconThree:this.resetBaconThree}  style={{height:this.state.baconThreeHeight,width:this.state.baconThreeWidth,transform:this.state.baconThreeTransform,backgroundBlendMode:this.state.baconThreeBlend}} className="bacon" id="baconSix">{this.state.baconThreeBlend?<h5 class='baconWords'>School Newspaper</h5>:undefined}</div>:undefined}
-      {this.props.amountOfBacon>6?<div onClick={!this.state.baconThreeHeight?this.moveBaconThree:this.resetBaconThree}  style={{height:this.state.baconThreeHeight,width:this.state.baconThreeWidth,transform:this.state.baconThreeTransform,backgroundBlendMode:this.state.baconThreeBlend}} className="bacon" id="baconSeven">{this.state.baconThreeBlend?<h5 class='baconWords'>School Radio Station</h5>:undefined}</div>:undefined}
+    {this.props.amountOfBacon>0?<img style={{transform:this.state.baconOneTransform,height:this.state.baconOneHeight,width:this.state.baconOneWidth,zIndex:this.state.baconOneIndex,filter:this.state.baconOneFilter}} onClick={!this.state.baconOneTransform?this.moveBaconOne:this.resetBaconOne}src='http://pngriver.com/wp-content/uploads/2017/11/Bacon-food-transparent-png-images-free-download-BaconFest_WebSlider_baconslice.png' className='bacon' id='baconOne'/>:undefined}
+
+      {this.props.amountOfBacon>1?<img style={{transform:this.state.baconTwoTransform,height:this.state.baconTwoHeight,width:this.state.baconTwoWidth,zIndex:this.state.baconTwoIndex,filter:this.state.baconTwoFilter}} onClick={!this.state.baconTwoTransform?this.moveBaconTwo:this.resetBaconTwo} src='http://pngriver.com/wp-content/uploads/2017/11/Bacon-food-transparent-png-images-free-download-BaconFest_WebSlider_baconslice.png'className='bacon' id='baconTwo'/>:undefined}
+      {this.props.amountOfBacon>2?<img style={{transform:this.state.baconThreeTransform,height:this.state.baconThreeHeight,width:this.state.baconThreeWidth,zIndex:this.state.baconThreeIndex,filter:this.state.baconThreeFilter}} onClick={!this.state.baconThreeTransform?this.moveBaconThree:this.resetBaconThree} src='http://pngriver.com/wp-content/uploads/2017/11/Bacon-food-transparent-png-images-free-download-BaconFest_WebSlider_baconslice.png'className='bacon' id='baconThree'/>:undefined}
+      {this.props.amountOfBacon>3?<img src='http://pngriver.com/wp-content/uploads/2017/11/Bacon-food-transparent-png-images-free-download-BaconFest_WebSlider_baconslice.png'className='bacon' id='baconFour'/>:undefined}
+      {this.props.amountOfBacon>4?<img src='http://pngriver.com/wp-content/uploads/2017/11/Bacon-food-transparent-png-images-free-download-BaconFest_WebSlider_baconslice.png'className='bacon' id='baconFive'/>:undefined}
+      {this.props.amountOfBacon>5?<img src='http://pngriver.com/wp-content/uploads/2017/11/Bacon-food-transparent-png-images-free-download-BaconFest_WebSlider_baconslice.png'className='bacon' id='baconSix'/>:undefined}
+      {this.props.amountOfBacon>6?<img src='http://pngriver.com/wp-content/uploads/2017/11/Bacon-food-transparent-png-images-free-download-BaconFest_WebSlider_baconslice.png'className='bacon' id='baconSeven'/>:undefined}
+        <div onClick={this.resetBaconOne}className='baconExperience' id='experienceOne' style={{display:this.state.experienceOne}}>
+            Congress
+            <br/>
+            Capitol Hill Intern
+            <br/>
+            <ul>
+                <li>Wrote over 60 letters to constituents promoting the Congressman’s ideas and voting record on different policy issues.</li>
+                <li>Attended 10 briefings and wrote in-depth memos for the 12 person staff on the substance of the briefings.</li>
+            </ul>
+        </div>
+        <div onClick={this.resetBaconTwo} className='baconExperience' id='experienceTwo' style={{display:this.state.experienceTwo}}>
+            Variety Business Intelligence
+            <br/>
+            Marketing and Sales Intern
+            <br/>
+            <ul>
+                <li>Helping streamline sales by keeping track of sales and account information for the Variety Business Intelligence team.</li>
+                <li>Grew the social media presence by drafting social media posts and assisting with the copy on various marketing materials.</li>
+            </ul>
+        </div>
+        <div onClick={this.resetBaconThree} className='baconExperience' id='experienceThree' style={{display:this.state.experienceThree}}>
+            Senator Feinstein
+            <br/>
+            Constituents Correspondence Intern
+            <br/>
+            <ul>
+                <li>Assisted in preparing Senator Feinstein’s visit to Los Angeles to speak on the topic of gun control.</li>
+                <li>Corresponded daily with the DC office to relay problems and updates of the political developments of Los Angeles.</li>
+            </ul>
+        </div>
+
       <h1 id='experience'><u>Experience</u></h1>
   </>
     )
