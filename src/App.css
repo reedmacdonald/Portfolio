@@ -57,6 +57,7 @@
 
 
 h1{
+  
   margin-left: 35%
 }
 h2{
@@ -112,7 +113,7 @@ h2{
 }
 #fork{
   position: absolute;
-  left:3%;
+  left:0;
   top:41%;
   height:400px;
   width:400px;
@@ -291,7 +292,7 @@ h2{
   position:absolute;
   width:100%;
   height:fill;
-  z-index:-2
+  z-index:-1
 }
 #baconSix{
   position:absolute;
