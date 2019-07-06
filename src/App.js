@@ -10,6 +10,7 @@ import Coffee from './Components/Coffee'
 import Butter from './Components/Butter'
 import PlateOfBacon from './Components/PlateOfBacon'
 import PancakeTray from './Components/PancakeTray'
+import Resume from './Components/MacDonald_Resume.pdf'
 
 class App extends Component {
   state={
@@ -139,7 +140,7 @@ class App extends Component {
       <Butter/>
       <PlateOfBacon addBacon={this.addBacon}/>
       <h2 className='headerTwo'>...who enjoys a <u>Full-Stack</u> of Pancakes!</h2>
-      <h2 className='headerThree'><a target='_blank' href='https://github.com/reedmacdonald'><u>GitHub</u></a> <a target='_blank' href='https://linkedin.com/in/reed-macdonald'><u>LinkedIn</u></a> <a target='_blank' href='https://reedmacdonald.com'><u>Old Portfolio</u></a></h2>
+      <h2 className='headerThree'><a target='_blank' href='https://github.com/reedmacdonald'><u>GitHub</u></a> <a target='_blank' href='https://linkedin.com/in/reed-macdonald'><u>LinkedIn</u></a> <a target='_blank' href='https://reedmacdonald.com'><u>Old Portfolio</u></a> <a href = {Resume} target = "_blank">Resume</a></h2>
     </div>
   )}
 }
