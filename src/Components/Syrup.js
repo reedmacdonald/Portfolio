@@ -47,6 +47,7 @@ class Syrup extends Component{
             <li>NodeJs</li>
             <li>SQL and NoSQL</li>
             <li>etc...</li>
+            <li onClick={this.props.blendColor}>Click to add csSyrup!</li>
             </ul></>}
     </div>
   </>

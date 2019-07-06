@@ -8,24 +8,132 @@ import Knife from './Components/Knife'
 import Syrup from './Components/Syrup'
 import Coffee from './Components/Coffee'
 import Butter from './Components/Butter'
+import PlateOfBacon from './Components/PlateOfBacon'
+import PancakeTray from './Components/PancakeTray'
 
 class App extends Component {
   state={
+    blend:undefined,
+    amountOfBacon:3,
+    amountOfPancakes:4,
+    baconLeft:'3%',
+    baconTop:'50%'
+  }
+  removeBacon=()=>{
+    if (this.state.amountOfBacon==1){
+    this.setState({
+      amountOfBacon:this.state.amountOfBacon-1,
+      baconLeft:'10%',
+      baconTop:'10%'
+    })}
+    if (this.state.amountOfBacon==2){
+      this.setState({
+        amountOfBacon:this.state.amountOfBacon-1,
+        baconLeft:'10%',
+        baconTop:'50%'
+      })}
+      if (this.state.amountOfBacon==3){
+        this.setState({
+          amountOfBacon:this.state.amountOfBacon-1,
+          baconLeft:'7%',
+          baconTop:'50%'
+        })}
+        if (this.state.amountOfBacon==4){
+          this.setState({
+            amountOfBacon:this.state.amountOfBacon-1,
+            baconLeft:'10%',
+            baconTop:'50%'
+          })}
+          if (this.state.amountOfBacon==5){
+            this.setState({
+              amountOfBacon:this.state.amountOfBacon-1,
+              baconLeft:'10%',
+              baconTop:'50%'
+            })}
+            if (this.state.amountOfBacon==6){
+              this.setState({
+                amountOfBacon:this.state.amountOfBacon-1,
+                baconLeft:'10%',
+                baconTop:'50%'
+              })}
+              if (this.state.amountOfBacon==7){
+                this.setState({
+                  amountOfBacon:this.state.amountOfBacon-1,
+                  baconLeft:'10%',
+                  baconTop:'50%'
+                })}
+    console.log('removing bacon')
+  }
+  removePancake=()=>{
+    this.setState({
+      amountOfPancakes:this.state.amountOfPancakes-1
+    })
+    console.log('removing Pancake')
+  }
+  addPancakes=()=>{
+    this.setState({
+      amountOfPancakes:this.state.amountOfPancakes+1
+    })
+  }
 
+  addBacon=()=>{
+    if (this.state.amountOfBacon==1){
+      this.setState({
+        amountOfBacon:this.state.amountOfBacon+1,
+        baconLeft:'10%',
+        baconTop:'10%'
+      })}
+      if (this.state.amountOfBacon==2){
+        this.setState({
+          amountOfBacon:this.state.amountOfBacon+1,
+          baconLeft:'10%',
+          baconTop:'50%'
+        })}
+        if (this.state.amountOfBacon==3){
+          this.setState({
+            amountOfBacon:this.state.amountOfBacon+1,
+            baconLeft:'7%',
+            baconTop:'50%'
+          })}
+          if (this.state.amountOfBacon==4){
+            this.setState({
+              amountOfBacon:this.state.amountOfBacon+1,
+              baconLeft:'10%',
+              baconTop:'50%'
+            })}
+            if (this.state.amountOfBacon==5){
+              this.setState({
+                amountOfBacon:this.state.amountOfBacon+1,
+                baconLeft:'10%',
+                baconTop:'50%'
+              })}
+              if (this.state.amountOfBacon==6){
+                this.setState({
+                  amountOfBacon:this.state.amountOfBacon+1,
+                  baconLeft:'1%',
+                  baconTop:'50%'
+                })}
+    console.log('adding bacon')
+  }
+  blendColor=()=>{
+    this.setState({blend:'darken'})
+    console.log('blending color!')
   }
   render(){
   return (
-    <div id="greatBackground">
+    <div style={{backgroundBlendMode:this.state.blend}} id="greatBackground">
       <h1>My name is Reed MacDonald</h1>
       <h2>I am a <u>Full-Stack</u> Developer</h2>
       <div className="plate"/>
       <Coffee/>
-      <PancakeStack/>
-      <Bacon/>
-      <Fork/>
-      <Knife/>
-      <Syrup/>
+      <PancakeStack amountOfPancakes={this.state.amountOfPancakes}/>
+      <Bacon amountOfBacon={this.state.amountOfBacon}/>
+      <Fork removePancake={this.removePancake} removeBacon={this.removeBacon} baconLeft={this.state.baconLeft} baconTop={this.state.baconTop} amountOfBacon={this.state.amountOfBacon} amountOfPancakes={this.state.amountOfPancakes}/>
+      
+      <Syrup blendColor={this.blendColor}/>
+      <PancakeTray addPancakes={this.addPancakes}/>
       <Butter/>
+      <PlateOfBacon addBacon={this.addBacon}/>
       <h2 className='headerTwo'>...who enjoys a <u>Full-Stack</u> of Pancakes!</h2>
       <h2 className='headerThree'><a target='_blank' href='https://github.com/reedmacdonald'><u>GitHub</u></a> <a target='_blank' href='https://linkedin.com/in/reed-macdonald'><u>LinkedIn</u></a></h2>
     </div>

@@ -1,5 +1,15 @@
 #greatBackground{
-  background-image: url('https://previews.123rf.com/images/jirkaejc/jirkaejc1005/jirkaejc100500460/7070395-checkered-tablecloth.jpg')
+  background-image: url('https://previews.123rf.com/images/jirkaejc/jirkaejc1005/jirkaejc100500460/7070395-checkered-tablecloth.jpg');
+  background-color:purple
+}
+#pancakeTray{
+  position: absolute;
+  top:-58%;
+  left:-25%;
+  transition-duration: 2s
+}
+#pancakeTray:hover{
+  transform: translateY(-15px)
 }
 
 .pancake{
@@ -63,7 +73,7 @@ h2{
   width:90px;
   height:70px;
   align-content: center;
-  top:50%;
+  top:45%;
   z-index: 26;
   transition-duration: 2s;
   border-radius: 13%;
@@ -87,11 +97,44 @@ h2{
   margin-top: 350%;
   font-size:30px
 }
+#plateOfBacon{
+  position: absolute;
+  left:85%;
+  top:5%;
+  transition-duration: 2s
+}
+#plateOfBacon:hover{
+  transform: translateY(-15px)
+}
 #fork{
   position: absolute;
   height:400px;
   width:400px;
-  margin-top:-130px
+  margin-top:-130px;
+  z-index: 80;
+  transition-duration: 2s
+}
+#eatBacon{
+  position: absolute;
+  width:10%;
+  top:60%;
+  left:10%;
+  z-index: 90;
+  transition-duration: 2s
+}
+#eatBacon:hover{
+  background-color: rgb(156, 243, 243)
+}
+#eatPancake:hover{
+  background-color: rgb(156,243,243)
+}
+#eatPancake{
+  position: absolute;
+  width:10%;
+  top:60%;
+  left:20%;
+  z-index:90;
+  transition-duration: 2s
 }
 #knife{
   position: absolute;
@@ -219,6 +262,38 @@ h2{
   position:absolute;
   margin-left:350px;
   margin-top:-145px;
+  background-image: url('https://ak0.picdn.net/shutterstock/videos/3697250/thumb/2.jpg');
+  z-index:2
+}
+#baconFour{
+  position:absolute;
+  left:20%;
+  top:20%;
+  transform:rotate(-30deg);
+  background-image: url('https://ak0.picdn.net/shutterstock/videos/3697250/thumb/2.jpg');
+  z-index:62
+}
+#baconFive{
+  position:absolute;
+  left:27%;
+  top:25%;
+  transform:rotate(-15deg);
+  background-image: url('https://ak0.picdn.net/shutterstock/videos/3697250/thumb/2.jpg');
+  z-index:2
+}
+#baconSix{
+  position:absolute;
+  left:22%;
+  top:20%;
+  transform:rotate(15deg);
+  background-image: url('https://ak0.picdn.net/shutterstock/videos/3697250/thumb/2.jpg');
+  z-index:60
+}
+#baconSeven{
+  position:absolute;
+  left:19%;
+  top:20%;
+  transform:rotate(36deg);
   background-image: url('https://ak0.picdn.net/shutterstock/videos/3697250/thumb/2.jpg');
   z-index:2
 }
