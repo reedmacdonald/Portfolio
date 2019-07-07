@@ -229,8 +229,8 @@ class Bacon extends Component{
             Legislative Intern
             <br/>
             <ul>
-                <li>Researched and formally invited over a dozen speakers to various networking events organized by the LAWAC.</li>
-                <li>Troubleshooted problems for members and helped manage payment and scheduling.</li>
+                <li>Wrote memos and took notes for the State Senator on meetings and legislation</li>
+                <li>Worked with different state bureaucracies to help resolve cases for constituents</li>
             </ul>
         </div>
         <div onClick={this.resetBaconSix} className='baconExperience' id='experienceSix' style={{display:this.state.experienceSix}}>
@@ -239,8 +239,8 @@ class Bacon extends Component{
             Radio Host
             <br/>
             <ul>
-                <li>Researched and formally invited over a dozen speakers to various networking events organized by the LAWAC.</li>
-                <li>Troubleshooted problems for members and helped manage payment and scheduling.</li>
+                <li>Hosted three shows over two years for the highly selective radio station</li>
+                <li>Produced "Crossing Over", one of the station's most listened to shows</li>
             </ul>
         </div>
         <div onClick={this.resetBaconSeven} className='baconExperience' id='experienceSeven' style={{display:this.state.experienceSeven}}>
@@ -249,8 +249,8 @@ class Bacon extends Component{
             Writer
             <br/>
             <ul>
-                <li>Researched and formally invited over a dozen speakers to various networking events organized by the LAWAC.</li>
-                <li>Troubleshooted problems for members and helped manage payment and scheduling.</li>
+                <li>Wrote over fifty articles over three years for multiple sections</li>
+                <li>Copy-edited and wrote headlines for over 25 stories</li>
             </ul>
         </div>
 

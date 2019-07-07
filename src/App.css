@@ -73,12 +73,18 @@ h2{
   left:-7.5%;
   top:57vh
 }
+#justSayin{
+  position: absolute;
+  left:50vw;
+  top:50vh;
+  z-index: 3
+}
 #skills{
   position:absolute;
   background-color: white;
   left:2.5vw;
   width:6vw;
-  height:10vh;
+  height:12vh;
   text-align: center;
   top:63vh;
   z-index: 26;
@@ -137,7 +143,7 @@ h2{
 #fork{
   position: absolute;
   left:0;
-  top:41%;
+  top:34%;
   height:30vh;
   width:23vw;
   margin-top:-130px;
@@ -345,7 +351,8 @@ h2{
   position:absolute;
   width:100%;
   height:2000px;
-  z-index:-1
+  z-index:-1;
+  background-color: rgb(206, 161, 248)
 }
 #baconSix{
   position:absolute;
@@ -378,8 +385,18 @@ h2{
   transform: translateX(-55%);
   border:2px solid black;
   box-shadow: 10px 10px gray;
-  
 }
+
+#experienceFour{
+  left:20vw
+}
+#experienceFive{
+  left:20vw
+}
+#experienceSix{
+  left:25.7vw
+}
+
 .pancakeStack{
   margin-top: -370px;
   margin-left:570px
@@ -387,18 +404,20 @@ h2{
 .headerTwo{
   margin-left: 0;
   width:100vw;
-  
+  background-color: aliceblue;
   position: absolute;
   top:70%;
-  text-align: center
+  text-align: center;
+  opacity: .13;
 }
 .headerThree{
   margin-left: 0;
   width:100vw;
-  
+  background-color: aliceblue;
   position: absolute;
   top:75%;
-  text-align: center
+  text-align: center;
+  opacity:.8
   
 }
 

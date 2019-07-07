@@ -37,9 +37,9 @@ class Syrup extends Component{
   render(){
     return(
   <>
-    <img onClick={!this.state.syrupHeight?this.moveSyrup:this.resetSyrup} style={{height:this.state.syrupHeight,width:this.state.syrupWidth,top:this.state.syrupTop,left:this.state.syrupLeft}} id='syrup' src='http://sipplssugarbush.com/wp-content/uploads/2017/12/Maple-Syrup-Bottle-With-Handle.png'/>
-    <div onClick={!this.state.syrupHeight?this.moveSyrup:this.resetSyrup} id="skills" style={{height:this.state.skillsHeight,width:this.state.skillsWidth,top:this.state.skillsTop,left:this.state.skillsLeft}}>
-        {!this.state.syrupHeight?<h3>Skills</h3>:<><h3><u>Skills</u></h3><ul>
+    <img onDoubleClick={this.props.pourSyrup} onClick={!this.state.syrupHeight?this.moveSyrup:this.resetSyrup} style={{height:this.state.syrupHeight,width:this.state.syrupWidth,top:this.state.syrupTop,left:this.state.syrupLeft}} id='syrup' src='http://sipplssugarbush.com/wp-content/uploads/2017/12/Maple-Syrup-Bottle-With-Handle.png'/>
+    <div onDoubleClick={this.props.pourSyrup} onClick={!this.state.syrupHeight?this.moveSyrup:this.resetSyrup} id="skills" style={{height:this.state.skillsHeight,width:this.state.skillsWidth,top:this.state.skillsTop,left:this.state.skillsLeft}}>
+        {!this.state.syrupHeight?<h3>Skills<h6>Double click to pour (cs)Syrup</h6></h3>:<><h3><u>Skills</u></h3><ul>
             <li>React</li>
             <li>JavaScript</li>
             <li>HTML</li>
@@ -50,7 +50,7 @@ class Syrup extends Component{
             
             </ul>
             
-            <h5 onClick={this.props.blendColor}>Click to add csSyrup!</h5></>}
+            </>}
     </div>
   </>
     )
