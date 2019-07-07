@@ -79,12 +79,27 @@ h2{
   top:50vh;
   z-index: 3
 }
+
+#fullStack{
+
+  display:inline-block;
+  border-radius: 100%;
+  
+}
+
+#fullStack:hover{
+  background-color: rgb(247, 215, 139);
+  transition-duration: 2s
+  
+}
+
+
 #skills{
   position:absolute;
   background-color: white;
   left:2.5vw;
   width:6vw;
-  height:12vh;
+  height:12vh fit-content;
   text-align: center;
   top:63vh;
   z-index: 26;
@@ -112,9 +127,10 @@ h2{
   transition-duration: 2s;
   animation:fadein 2s;
   width:40vw;
-  max-height:32vh;
+  max-height:30vh;
   font-weight: bold;
-  pointer-events: none
+  pointer-events: none;
+  display:block
 }
 #experienceTwo{
   top:47vh;
@@ -304,35 +320,27 @@ h2{
   left:22vw;
   top:31vh;
 }
-#baconOne:hover{
-  top:29vh
-}
+
 #baconTwo{
   position:absolute;
   left:19vw;
   top:31vh;
 }
-#baconTwo:hover{
-  top:29vh
-}
+
 #baconThree{
   position:absolute;
   left:15vw;
   top:31vh; 
   z-index:2
 }
-#baconThree:hover{
-  top:29vh
-}
+
 #baconFour{
   position:absolute;
   left:16vw;
   top:31vh;
   transform:rotate(-49deg);
 }
-#baconFour:hover{
-  top:29vh
-}
+
 
 #baconFive{
   position:absolute;
@@ -342,10 +350,7 @@ h2{
   z-index:2
 }
 
-#baconFive:hover{
-  top:29vh
 
-}
 
 #tableCloth{
   position:absolute;
@@ -360,9 +365,7 @@ h2{
   top:31vh;
   transform:rotate(49deg);
 }
-#baconSix:hover{
-  top:29vh
-}
+
 #baconSeven{
   position:absolute;
   left:15vw;
@@ -371,9 +374,7 @@ h2{
   
   z-index:2
 }
-#baconSeven:hover{
-  top:29vh
-}
+
 
 .plate{
   position:absolute;

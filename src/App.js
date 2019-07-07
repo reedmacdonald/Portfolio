@@ -162,7 +162,7 @@ class App extends Component {
   return (
     <div style={{backgroundBlendMode:this.state.blend}} id="greatBackground">
       <h1 className='headerOne'>My name is Reed MacDonald</h1>
-      <h2 className='headerOne'>I am a <u>Full-Stack</u> Developer</h2>
+      <h2 className='headerOne'>I am a <span id='fullStack'><u>Full-Stack</u></span> Developer</h2>
       <div className="plate"/>
       <Coffee/>
       <PancakeStack amountOfPancakes={this.state.amountOfPancakes}/>
@@ -175,7 +175,7 @@ class App extends Component {
       <div id='justSayin'>2250 SAT <br/> Just Sayin'</div>
       <PlateOfBacon addBacon={this.addBacon}/>
       
-      <h2 className='headerThree'>...who enjoys a <u>Full-Stack</u> of Pancakes!<br/><br/><a target='_blank' href='https://github.com/reedmacdonald'><u>GitHub</u></a> <a target='_blank' href='https://linkedin.com/in/reed-macdonald'><u>LinkedIn</u></a> <a target='_blank' href='https://reedmacdonald.com'><u>Old Portfolio</u></a> <a href = {Resume} target = "_blank">Resume</a> 
+      <h2 className='headerThree'>...who enjoys a <span id='fullStack'><u>Full-Stack</u></span> of Pancakes!<br/><br/><a target='_blank' href='https://github.com/reedmacdonald'><u>GitHub</u></a> <a target='_blank' href='https://linkedin.com/in/reed-macdonald'><u>LinkedIn</u></a> <a target='_blank' href='https://reedmacdonald.com'><u>Old Portfolio</u></a> <a href = {Resume} target = "_blank">Resume</a> 
       <br/>
       <a href='mailto:reedpmacdonald@gmail.com'>reedpmacdonald@gmail.com</a></h2>
     </div>
