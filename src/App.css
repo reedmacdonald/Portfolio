@@ -349,7 +349,7 @@ h2{
 
 #tableCloth{
   position:absolute;
-  width:100%;
+  width:100vw;
   height:2000px;
   z-index:-1;
   background-color: rgb(206, 161, 248)
