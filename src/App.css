@@ -417,7 +417,10 @@ h2{
   position: absolute;
   top:75%;
   text-align: center;
-  opacity:.8
-  
+  opacity:.8;
+  font-family: fantasy
+}
+.headerOne{
+  font-family: fantasy
 }
 

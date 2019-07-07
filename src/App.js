@@ -161,8 +161,8 @@ class App extends Component {
   render(){
   return (
     <div style={{backgroundBlendMode:this.state.blend}} id="greatBackground">
-      <h1>My name is Reed MacDonald</h1>
-      <h2>I am a <u>Full-Stack</u> Developer</h2>
+      <h1 className='headerOne'>My name is Reed MacDonald</h1>
+      <h2 className='headerOne'>I am a <u>Full-Stack</u> Developer</h2>
       <div className="plate"/>
       <Coffee/>
       <PancakeStack amountOfPancakes={this.state.amountOfPancakes}/>
