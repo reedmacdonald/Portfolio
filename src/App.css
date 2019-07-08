@@ -99,7 +99,7 @@ h2{
   background-color: white;
   left:2.5vw;
   width:6vw;
-  height:12vh fit-content;
+  height:11vh fit-content;
   text-align: center;
   top:63vh;
   z-index: 26;
@@ -126,11 +126,13 @@ h2{
   top:48vh;
   transition-duration: 2s;
   animation:fadein 2s;
+  -webkit-animation: fadein 2s;
   width:40vw;
   max-height:30vh;
   font-weight: bold;
   pointer-events: none;
-  display:block
+  display:block;
+  background-color: rgb(247, 181, 181)
 }
 #experienceTwo{
   top:47vh;
@@ -210,6 +212,10 @@ h2{
   from { opacity: 0; }
   to   { opacity: 1; }
 }
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
 #butterStick{
   position:absolute;
   top:45%;
@@ -269,10 +275,19 @@ h2{
   
 
 }
+@-webkit-keyframes steamUp{
+
+  from {top:11vh;opacity:100%}
+  
+  to {top:0;opacity:0}
+  
+
+}
 .steam{
   z-index: 100;
   position:absolute;
   animation: steamUp;
+  -webkit-animation: steamUp;
   left:27vw;
   top:11vh;
   width:10vw;
@@ -285,20 +300,28 @@ h2{
   left:24vw;
   animation-delay: 3.7s;
   animation-duration: 3s;
+  -webkit-animation-delay: 3.7s;
+  -webkit-animation-duration: 3s;
+
 }
 #steamThree{
   left:20vw;
   animation-delay: 2s;
   animation-duration: 7s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-duration: 7s;
 }
 #steamFour{
   left:18vw;
   animation-delay: 4.5s;
-  animation-duration:4s
+  animation-duration:4s;
+  -webkit-animation-delay: 4.5s;
+  -webkit-animation-duration:4s;
 }
 #steamFive{
   left:21vw;
-  animation-delay: 3s
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s
 }
 
 #coffeeWords{
@@ -311,6 +334,10 @@ h2{
   animation:fadein 3s;
 }
 @keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
