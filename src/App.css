@@ -132,7 +132,9 @@ h2{
   font-weight: bold;
   pointer-events: none;
   display:block;
-  background-color: rgb(247, 181, 181)
+  background-color: rgb(247, 181, 181);
+  border-radius:12%;
+  opacity: .9;
 }
 #experienceTwo{
   top:47vh;
