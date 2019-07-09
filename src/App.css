@@ -99,7 +99,7 @@ h2{
   background-color: white;
   left:2.5vw;
   width:6vw;
-  height:11vh fit-content;
+  max-height:10vh fit-content;
   text-align: center;
   top:63vh;
   z-index: 26;
