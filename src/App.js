@@ -172,10 +172,10 @@ class App extends Component {
       <Syrup pourSyrup={this.pourSyrup} blendColor={this.blendColor}/>
       <PancakeTray addPancakes={this.addPancakes}/>
       <Butter/>
-      <div id='justSayin'>2250 SAT <br/> Just Sayin'</div>
+      {this.state.amountOfPancakes==0?<div id='justSayin'>2250 SAT <br/> Just Sayin'</div>:undefined}
       <PlateOfBacon addBacon={this.addBacon}/>
       
-      <h2 className='headerThree'>...who enjoys a <span id='fullStack'><u>Full-Stack</u></span> of Pancakes!<br/><br/><a target='_blank' href='https://github.com/reedmacdonald'><u>GitHub</u></a> <a target='_blank' href='https://linkedin.com/in/reed-macdonald'><u>LinkedIn</u></a> <a target='_blank' href='https://reedmacdonald.com'><u>Old Portfolio</u></a> <a href = {Resume} target = "_blank">Resume</a> 
+      <h2 className='headerThree'>...who enjoys a <span id='fullStack'><u>Full-Stack</u></span> of Pancakes!<br/>(Click on things to open and close them)<br/><a target='_blank' href='https://github.com/reedmacdonald'><u>GitHub</u></a> <a target='_blank' href='https://linkedin.com/in/reed-macdonald'><u>LinkedIn</u></a> <a target='_blank' href='https://reedmacdonald.com'><u>Old Portfolio</u></a> <a href = {Resume} target = "_blank">Resume</a> 
       <br/>
       <a href='mailto:reedpmacdonald@gmail.com'>reedpmacdonald@gmail.com</a></h2>
     </div>
